@@ -163,6 +163,10 @@ class EasyAdminTwigExtension extends AbstractExtension
                 return $twig->render($fieldMetadata['template'], $templateParameters);
             }
 
+            if(\in_array($fieldMetadata['type'], ['easyadmin_section'])) {
+                return $twig->render($fieldMetadata['template'], $templateParameters);
+            }
+
             if (false === $templateParameters['is_accessible']) {
                 return $twig->render($entityConfiguration['templates']['label_inaccessible'], $templateParameters);
             }
