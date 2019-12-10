@@ -24,6 +24,8 @@ class PropertyConfigPass implements ConfigPassInterface
         'help' => null,
         // form field label (if 'null', autogenerate it; if 'false', hide it)
         'label' => null,
+        // the name of the FontAwesome icon to display next to the 'label' (doesn't include the 'fa-' prefix)
+        'icon' => null,
         // its value matches the value of 'dataType' for list/show and the value of 'fieldType' for new/edit
         'type' => null,
         // Symfony form field type (text, date, number, choice, ...) used to display the field
